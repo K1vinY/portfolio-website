@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
-    // 作品集篩選功能
+    // 專案篩選功能
     const filterButtons = document.querySelectorAll('.filter-btn');
     const portfolioItems = document.querySelectorAll('.portfolio-item');
     
@@ -138,7 +138,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // 簡單驗證
             if (!name || !email || !message) {
-                alert('請填寫所有必填欄位');
+                alert('Please fill in all required fields');
                 return;
             }
             
@@ -146,11 +146,11 @@ document.addEventListener('DOMContentLoaded', function() {
             const submitButton = this.querySelector('button[type="submit"]');
             const originalText = submitButton.textContent;
             
-            submitButton.textContent = '發送中...';
+            submitButton.textContent = 'Sending...';
             submitButton.disabled = true;
             
             setTimeout(() => {
-                alert('訊息已發送！我會盡快回覆您。');
+                alert('Message sent! I will get back to you soon.');
                 this.reset();
                 submitButton.textContent = originalText;
                 submitButton.disabled = false;
@@ -158,13 +158,13 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // 作品集項目點擊效果
+    // 專案項目點擊效果
     const portfolioLinks = document.querySelectorAll('.portfolio-link');
     
     portfolioLinks.forEach(link => {
         link.addEventListener('click', function(e) {
             e.preventDefault();
-            alert('這是一個示範連結。在實際網站中，這裡會導向到詳細的作品頁面。');
+            alert('This is a demo link. In a real website, this would navigate to detailed project pages.');
         });
     });
     
@@ -174,7 +174,7 @@ document.addEventListener('DOMContentLoaded', function() {
     socialLinks.forEach(link => {
         link.addEventListener('click', function(e) {
             e.preventDefault();
-            alert('這是一個示範連結。在實際網站中，這裡會導向到您的社交媒體頁面。');
+            alert('This is a demo link. In a real website, this would navigate to your social media pages.');
         });
     });
     
@@ -273,9 +273,9 @@ document.addEventListener('DOMContentLoaded', function() {
     document.head.appendChild(style);
     
     // 載入完成提示
-    console.log('作品集網站載入完成！');
-    console.log('摩卡慕斯調色板已應用');
-    console.log('所有互動功能已啟用');
+    console.log('Kevin Yu Biological Data Science Portfolio loaded successfully!');
+    console.log('Mocha Mousse color palette applied');
+    console.log('All interactive features enabled');
 });
 
 // 頁面載入動畫

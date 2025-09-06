@@ -30,7 +30,7 @@
     --shadow-heavy: 0 8px 30px rgba(184, 149, 107, 0.2);
     
     /* 字體 */
-    --font-primary: 'Noto Sans TC', sans-serif;
+    --font-primary: 'Inter', sans-serif;
 }
 
 /* 重置樣式 */
@@ -473,10 +473,81 @@ body {
     color: var(--black);
 }
 
+/* 發表論文區域 */
+.publications {
+    padding: 100px 0;
+    background: var(--white);
+}
+
+.publications-list {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.publication-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background: var(--light-gray);
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow-light);
+}
+
+.publication-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-medium);
+}
+
+.publication-icon {
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    background: var(--mocha-mus);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-size: 1.5rem;
+}
+
+.publication-content {
+    flex: 1;
+}
+
+.publication-content h3 {
+    font-size: 1.3rem;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+}
+
+.publication-journal {
+    color: var(--mocha-mus);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.publication-authors {
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+.publication-abstract {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
 /* 技能區域 */
 .skills {
     padding: 100px 0;
-    background: var(--white);
+    background: var(--light-gray);
 }
 
 .skills-grid {
@@ -691,6 +762,16 @@ body {
     
     .contact-content {
         grid-template-columns: 1fr;
+    }
+    
+    .publication-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+    
+    .publication-icon {
+        align-self: center;
     }
     
     .hero-buttons {
