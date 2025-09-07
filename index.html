@@ -58,7 +58,20 @@
                 </div>
             </div>
             <div class="hero-image">
-                <div class="hero-graphic">
+                <!-- 選項1：圓形照片（會裁切但保持圓形） -->
+                <!--
+                <div class="hero-photo">
+                    <img src="images/kevin-photo.jpg" alt="Kevin Yu" class="profile-image">
+                </div>
+                -->
+                
+                <!-- 選項2：長方形照片（完整顯示不裁切）- 取消註解下面這段來使用 -->
+                <div class="hero-photo-rectangle">
+                    <img src="images/kevin-photo.jpg" alt="Kevin Yu" class="profile-image-rectangle">
+                </div>
+                
+                <!-- 如果沒有照片，保留原有的圖形設計 -->
+                <div class="hero-graphic" style="display: none;">
                     <div class="circle circle-1"></div>
                     <div class="circle circle-2"></div>
                     <div class="circle circle-3"></div>
@@ -139,7 +152,14 @@
                     </div>
                 </div>
                 <div class="about-image">
-                    <div class="image-placeholder">
+                    <!-- 選項1：圓形照片（會裁切但保持圓形） -->
+                    <!-- <img src="images/kevin-about.jpg" alt="Kevin Yu" class="about-photo"> -->
+                    
+                    <!-- 選項2：長方形照片（完整顯示不裁切）- 取消註解下面這行來使用 -->
+                    <img src="images/kevin-about.jpg" alt="Kevin Yu" class="about-photo-rectangle">
+                    
+                    <!-- 如果沒有照片，保留原有的圖標設計 -->
+                    <div class="image-placeholder" style="display: none;">
                         <i class="fas fa-user-circle"></i>
                     </div>
                 </div>
@@ -160,7 +180,9 @@
             <div class="portfolio-grid">
                 <div class="portfolio-item" data-category="device">
                     <div class="portfolio-image">
-                        <div class="image-placeholder">
+                        <!-- 專案圖片 -->
+                        <img src="images/project-hearing-device.jpg" alt="Assistive Listening Device" class="project-image">
+                        <div class="image-placeholder" style="display: none;">
                             <i class="fas fa-heartbeat"></i>
                         </div>
                         <div class="portfolio-overlay">
@@ -172,7 +194,8 @@
                 </div>
                 <div class="portfolio-item" data-category="research">
                     <div class="portfolio-image">
-                        <div class="image-placeholder">
+                        <img src="images/project-eeg-tinnitus.jpg" alt="Ear-EEG Tinnitus Treatment" class="project-image">
+                        <div class="image-placeholder" style="display: none;">
                             <i class="fas fa-brain"></i>
                         </div>
                         <div class="portfolio-overlay">
@@ -184,7 +207,8 @@
                 </div>
                 <div class="portfolio-item" data-category="analysis">
                     <div class="portfolio-image">
-                        <div class="image-placeholder">
+                        <img src="images/project-biosignal-analysis.jpg" alt="Biosignal Analysis" class="project-image">
+                        <div class="image-placeholder" style="display: none;">
                             <i class="fas fa-chart-line"></i>
                         </div>
                         <div class="portfolio-overlay">
@@ -196,7 +220,8 @@
                 </div>
                 <div class="portfolio-item" data-category="research">
                     <div class="portfolio-image">
-                        <div class="image-placeholder">
+                        <img src="images/project-clinical-trial.jpg" alt="Clinical Trial Research" class="project-image">
+                        <div class="image-placeholder" style="display: none;">
                             <i class="fas fa-microscope"></i>
                         </div>
                         <div class="portfolio-overlay">
@@ -208,7 +233,8 @@
                 </div>
                 <div class="portfolio-item" data-category="analysis">
                     <div class="portfolio-image">
-                        <div class="image-placeholder">
+                        <img src="images/project-bioinformatics.jpg" alt="Bioinformatics Analysis" class="project-image">
+                        <div class="image-placeholder" style="display: none;">
                             <i class="fas fa-dna"></i>
                         </div>
                         <div class="portfolio-overlay">
@@ -220,7 +246,8 @@
                 </div>
                 <div class="portfolio-item" data-category="device">
                     <div class="portfolio-image">
-                        <div class="image-placeholder">
+                        <img src="images/project-diagnostic-system.jpg" alt="Medical Diagnostic System" class="project-image">
+                        <div class="image-placeholder" style="display: none;">
                             <i class="fas fa-stethoscope"></i>
                         </div>
                         <div class="portfolio-overlay">
