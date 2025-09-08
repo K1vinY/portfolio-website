@@ -6,12 +6,13 @@
 images/
 ├── kevin-photo.jpg          # 首頁個人照片 (400x400px 或更大)
 ├── kevin-about.jpg          # 關於我區塊照片 (300x300px 或更大)
-├── project-hearing-device.jpg    # 輔助聽力設備專案圖片
-├── project-eeg-tinnitus.jpg      # EEG耳鳴治療專案圖片
-├── project-biosignal-analysis.jpg # 生物信號分析專案圖片
-├── project-clinical-trial.jpg    # 臨床試驗專案圖片
-├── project-bioinformatics.jpg    # 生物信息學專案圖片
-├── project-diagnostic-system.jpg # 醫療診斷系統專案圖片
+├── project-coral-bleaching.jpg    # 珊瑚白化預測專案圖片
+├── project-nhanes-analysis.jpg    # NHANES數據分析專案圖片
+├── project-ddi-prediction.jpg     # 藥物相互作用預測專案圖片
+├── project-llm-safety.jpg         # LLM安全系統專案圖片
+├── project-hearing-device.jpg     # 輔助聽力設備專案圖片
+├── project-eeg-tinnitus.jpg       # EEG耳鳴治療專案圖片
+├── project-wheelchair.jpg         # 輪椅創新專案圖片
 └── resume.pdf               # 履歷PDF文件
 ```
 

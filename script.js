@@ -20,19 +20,18 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // 平滑滾動到對應區段
+    // 平滑滾動到對應區段（僅同頁錨點）
     navLinks.forEach(link => {
         link.addEventListener('click', function(e) {
-            e.preventDefault();
-            const targetId = this.getAttribute('href');
-            const targetSection = document.querySelector(targetId);
-            
-            if (targetSection) {
-                const offsetTop = targetSection.offsetTop - 70; // 考慮固定導航欄高度
-                window.scrollTo({
-                    top: offsetTop,
-                    behavior: 'smooth'
-                });
+            const href = this.getAttribute('href') || '';
+            // 僅攔截同頁 #anchor，跨頁連結（如 index.html#about）保持預設
+            if (href.startsWith('#')) {
+                e.preventDefault();
+                const targetSection = document.querySelector(href);
+                if (targetSection) {
+                    const offsetTop = targetSection.offsetTop - 70; // 考慮固定導航欄高度
+                    window.scrollTo({ top: offsetTop, behavior: 'smooth' });
+                }
             }
         });
     });
@@ -163,8 +162,15 @@ document.addEventListener('DOMContentLoaded', function() {
     
     portfolioLinks.forEach(link => {
         link.addEventListener('click', function(e) {
-            e.preventDefault();
-            alert('This is a demo link. In a real website, this would navigate to detailed project pages.');
+            // 檢查連結是否有有效的 href 屬性
+            if (this.getAttribute('href') && this.getAttribute('href') !== '#') {
+                // 如果有有效的連結，允許正常跳轉
+                return true;
+            } else {
+                // 如果是佔位符連結，阻止跳轉並顯示提示
+                e.preventDefault();
+                alert('This is a demo link. In a real website, this would navigate to detailed project pages.');
+            }
         });
     });
     

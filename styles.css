@@ -1290,3 +1290,343 @@ html {
 ::-webkit-scrollbar-thumb:hover {
     background: var(--mocha-mus-dark);
 }
+
+/* 專案詳情頁面樣式 */
+.project-detail {
+    padding: 120px 0 80px 0;
+    background: var(--white);
+    min-height: 100vh;
+}
+
+.back-button {
+    margin-bottom: 2rem;
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--mocha-mus);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 0.8rem 1.5rem;
+    border: 2px solid var(--mocha-mus);
+    border-radius: 25px;
+    background: transparent;
+}
+
+.back-link:hover {
+    background: var(--mocha-mus);
+    color: var(--white);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-medium);
+}
+
+.project-header {
+    text-align: left;
+    margin-bottom: 4rem;
+    padding: 3rem;
+    background: linear-gradient(135deg, var(--light-gray), var(--white));
+    border-radius: 20px;
+    box-shadow: var(--shadow-light);
+}
+
+.project-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 2rem;
+    line-height: 1.2;
+}
+
+.project-meta {
+    display: flex;
+    justify-content: flex-start;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.meta-item {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+}
+
+.meta-item i {
+    color: var(--mocha-mus);
+    font-size: 1.2rem;
+}
+
+.project-summary {
+    background: var(--light-gray);
+    padding: 3rem;
+    border-radius: 15px;
+    margin-bottom: 3rem;
+    box-shadow: var(--shadow-light);
+}
+
+.project-summary h2 {
+    font-size: 2rem;
+    color: var(--mocha-mus);
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.project-summary p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: var(--text-secondary);
+    text-align: left;
+    max-width: none;
+    margin: 0;
+}
+
+.project-content {
+    max-width: none;
+    margin: 0;
+}
+
+.content-section {
+    margin-bottom: 4rem;
+    background: var(--white);
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: var(--shadow-light);
+    border-left: 5px solid var(--mocha-mus);
+}
+
+.content-section h2 {
+    font-size: 2.2rem;
+    color: var(--mocha-mus);
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.content-section h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: var(--mocha-mus);
+}
+
+.content-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-secondary);
+}
+
+.content-text p {
+    margin-bottom: 1.5rem;
+}
+
+.results-content {
+    display: grid;
+    grid-template-columns: 1fr; /* 單欄：圖片會在文字下方 */
+    gap: 2rem;
+    align-items: start;
+}
+
+.results-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-secondary);
+}
+
+.results-images {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+    align-items: center; /* 垂直置中：中心對中心 */
+    justify-items: center; /* 水平置中（保險） */
+}
+
+.results-images img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: var(--shadow-medium);
+    transition: transform 0.3s ease;
+}
+
+.results-images img:hover {
+    transform: scale(1.02);
+}
+
+.image-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    background: var(--light-gray);
+    border-radius: 10px;
+    color: var(--text-secondary);
+    border: 2px dashed var(--mocha-mus-light);
+}
+
+.image-placeholder i {
+    font-size: 3rem;
+    color: var(--mocha-mus-light);
+    margin-bottom: 1rem;
+}
+
+.project-technologies {
+    background: var(--light-gray);
+    padding: 3rem;
+    border-radius: 15px;
+    margin-bottom: 3rem;
+    text-align: center;
+    max-width: none;
+}
+
+.project-technologies h3 {
+    font-size: 1.8rem;
+    color: var(--mocha-mus);
+    margin-bottom: 2rem;
+}
+
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.tech-tag {
+    background: var(--mocha-mus);
+    color: var(--white);
+    padding: 0.6rem 1.2rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.tech-tag:hover {
+    background: var(--mocha-mus-dark);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-light);
+}
+
+.project-links {
+    background: var(--white);
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: var(--shadow-light);
+    text-align: center;
+    max-width: none;
+}
+
+.project-links h3 {
+    font-size: 1.8rem;
+    color: var(--mocha-mus);
+    margin-bottom: 2rem;
+}
+
+.link-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.link-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 2rem;
+    background: var(--mocha-mus);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow-light);
+}
+
+.link-button:hover {
+    background: var(--mocha-mus-dark);
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-medium);
+}
+
+.link-button.secondary {
+    background: transparent;
+    color: var(--mocha-mus);
+    border: 2px solid var(--mocha-mus);
+}
+
+.link-button.secondary:hover {
+    background: var(--mocha-mus);
+    color: var(--white);
+}
+
+/* 響應式設計 */
+@media (max-width: 768px) {
+    .project-title {
+        font-size: 2rem;
+    }
+    
+    .project-meta {
+        flex-direction: column;
+        gap: 1rem;
+        justify-content: flex-start;
+    }
+    
+    .results-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .results-images {
+        grid-template-columns: 1fr;
+    }
+    
+    .content-section {
+        padding: 2rem;
+    }
+    
+    .project-summary {
+        padding: 2rem;
+    }
+    
+    .project-technologies,
+    .project-links {
+        padding: 2rem;
+    }
+    
+    .link-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .link-button {
+        width: 100%;
+        max-width: 300px;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-detail {
+        padding: 100px 0 60px 0;
+    }
+    
+    .project-title {
+        font-size: 1.6rem;
+    }
+    
+    .content-section h2 {
+        font-size: 1.8rem;
+    }
+    
+    .project-summary h2 {
+        font-size: 1.6rem;
+    }
+}

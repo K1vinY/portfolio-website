@@ -168,87 +168,104 @@
         <div class="container">
             <h2 class="section-title">Research Projects</h2>
             <div class="portfolio-filter">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="research">Research</button>
-                <button class="filter-btn" data-filter="device">Medical Devices</button>
-                <button class="filter-btn" data-filter="analysis">Data Analysis</button>
+                <button class="filter-btn active" data-filter="all">ALL</button>
+                <button class="filter-btn" data-filter="data">Data</button>
+                <button class="filter-btn" data-filter="ai">AI Systems</button>
+                <button class="filter-btn" data-filter="biomedical">Biomedical</button>
             </div>
             <div class="portfolio-grid">
-                <div class="portfolio-item" data-category="device">
+                <!-- Data 類別專案 -->
+                <div class="portfolio-item" data-category="data">
                     <div class="portfolio-image">
-                        <!-- 專案圖片 -->
+                        <img src="images/project-coral-bleaching.jpg" alt="Coral Bleaching Prediction" class="project-image">
+                        <div class="image-placeholder" style="display: none;">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>Predicting Coral Bleaching Using NCAA Database</h3>
+                            <p>Data-driven analysis of coral reef health using environmental datasets</p>
+                            <a href="project-detail.html?project=coral-bleaching" class="portfolio-link">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="data">
+                    <div class="portfolio-image">
+                        <img src="images/project-nhanes-analysis.jpg" alt="NHANES Data Analysis" class="project-image">
+                        <div class="image-placeholder" style="display: none;">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>Applied Statistical Testing on Socioeconomic Impact Using NHANES Data</h3>
+                            <p>Statistical analysis of health and socioeconomic factors using national survey data</p>
+                            <a href="#" class="portfolio-link">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- AI Systems 類別專案 -->
+                <div class="portfolio-item" data-category="ai">
+                    <div class="portfolio-image">
+                        <img src="images/project-ddi-prediction.jpg" alt="DDI Prediction System" class="project-image">
+                        <div class="image-placeholder" style="display: none;">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>Unveiling DDI Mechanisms: A Hybrid LLM-GNN Approach for Prediction and Interpretation</h3>
+                            <p>Advanced AI system combining Large Language Models and Graph Neural Networks for drug interaction prediction</p>
+                            <a href="#" class="portfolio-link">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="ai">
+                    <div class="portfolio-image">
+                        <img src="images/project-llm-safety.jpg" alt="LLM Safety System" class="project-image">
+                        <div class="image-placeholder" style="display: none;">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>AI-based LLM Content Safety and Moderation Systems</h3>
+                            <p>End-to-end AI safety detection system for large language model content moderation</p>
+                            <a href="#" class="portfolio-link">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Biomedical 類別專案 -->
+                <div class="portfolio-item" data-category="biomedical">
+                    <div class="portfolio-image">
                         <img src="images/project-hearing-device.jpg" alt="Assistive Listening Device" class="project-image">
                         <div class="image-placeholder" style="display: none;">
                             <i class="fas fa-heartbeat"></i>
                         </div>
                         <div class="portfolio-overlay">
-                            <h3>Assistive Listening Device Development</h3>
-                            <p>Biomedical Engineering-based Hearing Assistance Technology Research</p>
+                            <h3>Development of Assistive Listening Device and Clinical Trials</h3>
+                            <p>Biomedical engineering research on hearing assistance technology with clinical validation</p>
                             <a href="#" class="portfolio-link">View Details</a>
                         </div>
                     </div>
                 </div>
-                <div class="portfolio-item" data-category="research">
+                <div class="portfolio-item" data-category="biomedical">
                     <div class="portfolio-image">
                         <img src="images/project-eeg-tinnitus.jpg" alt="Ear-EEG Tinnitus Treatment" class="project-image">
                         <div class="image-placeholder" style="display: none;">
-                            <i class="fas fa-brain"></i>
+                            <i class="fas fa-ear-listen"></i>
                         </div>
                         <div class="portfolio-overlay">
-                            <h3>Ear-EEG Tinnitus Treatment Device</h3>
-                            <p>Ear-EEG-based Tinnitus Self-Treatment Device Proposal</p>
+                            <h3>Combination of Ear-EEG and Masking in Earphone for Tinnitus Improvements</h3>
+                            <p>Innovative treatment approach combining ear-EEG technology with acoustic masking therapy</p>
                             <a href="#" class="portfolio-link">View Details</a>
                         </div>
                     </div>
                 </div>
-                <div class="portfolio-item" data-category="analysis">
+                <div class="portfolio-item" data-category="biomedical">
                     <div class="portfolio-image">
-                        <img src="images/project-biosignal-analysis.jpg" alt="Biosignal Analysis" class="project-image">
+                        <img src="images/project-wheelchair.jpg" alt="Wheelchair Innovation" class="project-image">
                         <div class="image-placeholder" style="display: none;">
-                            <i class="fas fa-chart-line"></i>
+                            <i class="fas fa-wheelchair"></i>
                         </div>
                         <div class="portfolio-overlay">
-                            <h3>Biosignal Analysis Research</h3>
-                            <p>Machine Learning Analysis of Large-scale Biomedical Datasets</p>
-                            <a href="#" class="portfolio-link">View Details</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item" data-category="research">
-                    <div class="portfolio-image">
-                        <img src="images/project-clinical-trial.jpg" alt="Clinical Trial Research" class="project-image">
-                        <div class="image-placeholder" style="display: none;">
-                            <i class="fas fa-microscope"></i>
-                        </div>
-                        <div class="portfolio-overlay">
-                            <h3>Clinical Trial Research</h3>
-                            <p>Medical Device Clinical Trial Data Analysis and Evaluation</p>
-                            <a href="#" class="portfolio-link">View Details</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item" data-category="analysis">
-                    <div class="portfolio-image">
-                        <img src="images/project-bioinformatics.jpg" alt="Bioinformatics Analysis" class="project-image">
-                        <div class="image-placeholder" style="display: none;">
-                            <i class="fas fa-dna"></i>
-                        </div>
-                        <div class="portfolio-overlay">
-                            <h3>Bioinformatics Analysis</h3>
-                            <p>Genomic Data Processing and Statistical Modeling</p>
-                            <a href="#" class="portfolio-link">View Details</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item" data-category="device">
-                    <div class="portfolio-image">
-                        <img src="images/project-diagnostic-system.jpg" alt="Medical Diagnostic System" class="project-image">
-                        <div class="image-placeholder" style="display: none;">
-                            <i class="fas fa-stethoscope"></i>
-                        </div>
-                        <div class="portfolio-overlay">
-                            <h3>Medical Diagnostic System</h3>
-                            <p>Machine Learning-based Medical Diagnostic Assistant System</p>
+                            <h3>Wheelchair-Savvy: Innovating the Structure of Wheelchairs</h3>
+                            <p>Biomedical engineering research on wheelchair design improvements for enhanced mobility and accessibility</p>
                             <a href="#" class="portfolio-link">View Details</a>
                         </div>
                     </div>
