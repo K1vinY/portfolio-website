@@ -40,7 +40,7 @@
             <div class="project-header">
                 <h1 class="project-title">Applied Statistical Testing on Socioeconomic Impact Using NHANES Data</h1>
                 <div class="project-meta">
-                    <div class="meta-item"><i class="fas fa-calendar-alt"></i><span>Jan 2025 - May 2025</span></div>
+                    <div class="meta-item"><i class="fas fa-calendar-alt"></i><span>Aug 2024 - Dec 2024</span></div>
                     <div class="meta-item"><i class="fas fa-map-marker-alt"></i><span>Arizona State University</span></div>
                     <div class="meta-item"><i class="fas fa-tag"></i><span>Data Analysis</span></div>
                 </div>
@@ -48,21 +48,21 @@
 
             <div class="project-summary">
                 <h2>Abstract</h2>
-                <p>This project analyzes NHANES (National Health and Nutrition Examination Survey) data to quantify relationships between socioeconomic status and key health indicators using statistical testing and modeling. Results aim to inform public health decision-making and equity-focused interventions.</p>
+                <p>This project investigates how income level affects various health and lifestyle outcomes by analyzing over 10,000 records from the NHANES dataset. Using statistical techniques including ANOVA and Chi-square tests, the study revealed significant disparities across income groups in sleep duration, blood pressure, substance use, and depression. The findings support the hypothesis that higher-income individuals tend to experience better physical and emotional health, highlighting the crucial role of socioeconomic factors in public health.</p>
             </div>
 
             <div class="project-content">
                 <div class="content-section">
                     <h2>The What</h2>
                     <div class="content-text">
-                        <p>We explored the associations between socioeconomic variables (e.g., income, education) and health outcomes (e.g., BMI, blood pressure) using NHANES datasets.</p>
+                        <p>Do wealthier individuals actually live healthier, less stressful lives? Motivated by both personal observation and public health research, this study explores whether income is significantly associated with measurable health and lifestyle outcomes. Key variables include sleep duration, blood pressure, regular marijuana use, and depression levels—each of which serves as an indicator of stress or emotional well-being.</p>
                     </div>
                 </div>
 
                 <div class="content-section">
                     <h2>The How</h2>
                     <div class="content-text">
-                        <p>Data preprocessing, missing value handling, variable normalization, and hypothesis testing (t-test, ANOVA, chi-square), plus regression modeling to evaluate effect sizes and significance.</p>
+                        <p>Using the NHANES dataset, four health metrics were selected and cleaned using R. ANOVA was applied to continuous variables (e.g., sleep hours and systolic blood pressure), while Chi-square tests examined categorical outcomes (e.g., marijuana use and depression frequency). The analysis included 12 income groups and more than 10,000 participants. Data were visualized using ggplot2 with histograms, boxplots, and bar charts to uncover patterns and distributional insights.</p>
                     </div>
                 </div>
 
@@ -70,11 +70,20 @@
                     <h2>Results & Impact</h2>
                     <div class="results-content">
                         <div class="results-text">
-                            <p>Identified statistically significant associations between socioeconomic strata and multiple health measures with effect sizes robust across sensitivity analyses.</p>
+                            <p>The statistical tests revealed strong associations between income and all selected health indicators:</p>
+                            <ul class="results-list">
+                                <li><strong>Sleep Duration:</strong> Significantly longer in higher-income groups (p < 0.001)</li>
+                                <li><strong>Blood Pressure:</strong> Statistically lower in several higher-income groups</li>
+                                <li><strong>Marijuana Use:</strong> Less frequent among wealthy individuals (p < 0.001)</li>
+                                <li><strong>Depression Levels:</strong> Substantially lower among top income tiers (p < 2.2e-16)</li>
+                            </ul>
+                            <p>These results confirm the hypothesis that wealth may offer protective benefits for both physical and emotional health. The project underscores the importance of socioeconomic equity in healthcare policy and supports using data science for population health research.</p>
                         </div>
                         <div class="results-images">
-                            <img src="images/nhanes-score.png" alt="NHANES Score">
-                            <img src="images/nhanes-result.png" alt="NHANES Result">
+                            <img src="images/nhanes-result1.png" alt="NHANES Result 1">
+                            <img src="images/nhanes-result2.png" alt="NHANES Result 2">
+                            <img src="images/nhanes-result3.png" alt="NHANES Result 3">
+                            <img src="images/nhanes-result4.png" alt="NHANES Result 4">
                         </div>
                     </div>
                 </div>
@@ -83,20 +92,18 @@
             <div class="project-technologies">
                 <h3>Technologies Used</h3>
                 <div class="tech-tags">
-                    <span class="tech-tag">Python</span>
-                    <span class="tech-tag">Pandas</span>
-                    <span class="tech-tag">NumPy</span>
-                    <span class="tech-tag">SciPy</span>
-                    <span class="tech-tag">StatsModels</span>
-                    <span class="tech-tag">Seaborn</span>
+                    <span class="tech-tag">R</span>
+                    <span class="tech-tag">dplyr </span>
+                    <span class="tech-tag">ggplot2 </span>
+                    <span class="tech-tag">ANOVA </span>
+                    <span class="tech-tag">Chi-square Test</span>
                 </div>
             </div>
 
             <div class="project-links">
                 <h3>Related Links</h3>
                 <div class="link-buttons">
-                    <a class="link-button" href="#" target="_blank" rel="noopener noreferrer">View Code</a>
-                    <a class="link-button secondary" href="#" target="_blank" rel="noopener noreferrer">Report</a>
+                    <a class="link-button" href="https://github.com/K1vinY/2024_Statistics-for-Bio-Data-Sci-I_Final-project" target="_blank" rel="noopener noreferrer">View Code</a>
                 </div>
             </div>
         </div>

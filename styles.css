@@ -1365,6 +1365,40 @@ html {
     background: var(--mocha-mus-dark);
 }
 
+/* NHANES 專案條列式結果樣式 */
+.results-text .results-list {
+    margin: 1rem 0;
+    padding-left: 0;
+    list-style: none;
+    color: var(--text-secondary);
+    line-height: 1.8;
+}
+
+.results-text .results-list li {
+    margin-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    position: relative;
+    text-align: left;
+}
+
+.results-text .results-list li::before {
+    content: '•';
+    color: var(--mocha-mus);
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+.results-text .results-list li strong {
+    color: var(--text-secondary);
+    font-weight: normal;
+}
+
+.results-text p {
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
 /* 專案詳情頁面樣式 */
 .project-detail {
     padding: 120px 0 80px 0;
