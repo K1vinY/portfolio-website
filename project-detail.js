@@ -20,6 +20,25 @@ const projects = {
             'images/coral-bleaching-score.png',
             'images/coral-bleaching-results.png'
         ]
+    },
+    'nhanes': {
+        title: 'Applied Statistical Testing on Socioeconomic Impact Using NHANES Data',
+        time: 'Jan 2025 - May 2025',
+        location: 'Arizona State University',
+        category: 'Data Analysis',
+        abstract: 'This project analyzes NHANES (National Health and Nutrition Examination Survey) data to quantify relationships between socioeconomic status and key health indicators using statistical testing and modeling. Results aim to inform public health decision-making and equity-focused interventions.',
+        what: 'We explored the associations between socioeconomic variables (e.g., income, education) and health outcomes (e.g., BMI, blood pressure) using NHANES datasets.',
+        how: 'Data preprocessing, missing value handling, variable normalization, and hypothesis testing (t-test, ANOVA, chi-square), plus regression modeling to evaluate effect sizes and significance.',
+        results: 'Identified statistically significant associations between socioeconomic strata and multiple health measures with effect sizes robust across sensitivity analyses.',
+        technologies: ['Python', 'Pandas', 'NumPy', 'SciPy', 'StatsModels', 'Seaborn'],
+        links: [
+            { text: 'View Code', url: '#', type: 'primary' },
+            { text: 'Report', url: '#', type: 'secondary' }
+        ],
+        images: [
+            'images/nhanes-score.png',
+            'images/nhanes-result.png'
+        ]
     }
     // 其他專案數據可以在這裡添加
 };

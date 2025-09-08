@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predicting Coral Bleaching Using NCAA Database - Kevin Yu Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Kevin Yu</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="index.html#about" class="nav-link">About Me</a></li>
+                <li class="nav-item"><a href="index.html#portfolio" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="index.html#experience" class="nav-link">Experience</a></li>
+                <li class="nav-item"><a href="index.html#publications" class="nav-link">Publications</a></li>
+                <li class="nav-item"><a href="index.html#resume" class="nav-link">Resume</a></li>
+                <li class="nav-item"><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="project-detail">
+        <div class="container">
+            <div class="back-button">
+                <a href="index.html#portfolio" class="back-link"><i class="fas fa-arrow-left"></i> Back to Projects</a>
+            </div>
+
+            <div class="project-header">
+                <h1 class="project-title">Predicting Coral Bleaching Using NCAA Database</h1>
+                <div class="project-meta">
+                    <div class="meta-item"><i class="fas fa-calendar-alt"></i><span>Jan 2025 - May 2025</span></div>
+                    <div class="meta-item"><i class="fas fa-map-marker-alt"></i><span>Arizona State University</span></div>
+                    <div class="meta-item"><i class="fas fa-tag"></i><span>Data Analysis</span></div>
+                </div>
+            </div>
+
+            <div class="project-summary">
+                <h2>Abstract</h2>
+                <p>Coral bleaching has become a critical environmental issue driven by climate change and ocean stressors. This project utilizes environmental datasets from the NOAA Coral Reef Watch program to predict the severity of coral bleaching events using machine learning techniques. By integrating and preprocessing oceanographic variables, we applied multiple predictive models to identify high-risk zones and inform conservation efforts. Through performance tuning and evaluation, the models demonstrated strong forecasting capability and computational efficiency, providing a valuable tool for reef monitoring and environmental planning.</p>
+            </div>
+
+            <div class="project-content">
+                <div class="content-section">
+                    <h2>The What</h2>
+                    <div class="content-text">
+                        <p>Coral bleaching poses a major threat to marine biodiversity and coastal ecosystems. With increasing sea temperatures and ocean acidification, traditional monitoring approaches fall short in providing timely forecasts. This project aimed to build a predictive system that can classify and anticipate the severity of coral bleaching using large-scale environmental data, helping scientists and policy makers intervene before irreversible damage occurs.</p>
+                    </div>
+                </div>
+
+                <div class="content-section">
+                    <h2>The How</h2>
+                    <div class="content-text">
+                        <p>We collected and cleaned historical coral bleaching and sea condition data from the NOAA Coral Reef Watch database. Using features such as sea surface temperature, light stress, and depth, we trained and evaluated several classification models including XGBoost, Support Vector Machines (SVM), and a Random Classifier baseline. Feature engineering and hyperparameter tuning were conducted to improve performance. The entire pipeline was optimized for efficiency in cloud computing environments, ensuring scalability for future environmental monitoring use cases.</p>
+                    </div>
+                </div>
+
+                <div class="content-section">
+                    <h2>Results & Impact</h2>
+                    <div class="results-content">
+                        <div class="results-text">
+                            <p>Among all models, XGBoost achieved the highest accuracy at 94%, significantly outperforming baseline classifiers. The model's ability to identify high-risk reef zones can support early-warning systems and resource allocation for coral reef conservation. Additionally, the computational pipeline was streamlined for deployment on cloud infrastructure, enabling real-time scalability for future integrations.</p>
+                        </div>
+                        <div class="results-images">
+                            <img src="images/coral-bleaching-score.png" alt="Coral Bleaching Score">
+                            <img src="images/coral-bleaching-results.png" alt="Coral Bleaching Results">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-technologies">
+                <h3>Technologies Used</h3>
+                <div class="tech-tags">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Machine Learning</span>
+                    <span class="tech-tag">Data Analysis</span>
+                    <span class="tech-tag">SVM</span>
+                    <span class="tech-tag">XGBoost</span>
+                    <span class="tech-tag">Random Classifier</span>
+                </div>
+            </div>
+
+            <div class="project-links">
+                <h3>Related Links</h3>
+                <div class="link-buttons">
+                    <a class="link-button" href="https://github.com/K1vinY/2025_ML-workshop" target="_blank" rel="noopener noreferrer">View Code</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Kevin Yu. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
