@@ -121,41 +121,41 @@ document.addEventListener('DOMContentLoaded', function() {
         fadeObserver.observe(element);
     });
     
-    // 聯絡表單處理
-    const contactForm = document.querySelector('.contact-form form');
+    // 聯絡表單處理 - 已移除表單
+    // const contactForm = document.querySelector('.contact-form form');
     
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // 獲取表單數據
-            const formData = new FormData(this);
-            const name = this.querySelector('input[type="text"]').value;
-            const email = this.querySelector('input[type="email"]').value;
-            const subject = this.querySelectorAll('input[type="text"]')[1].value;
-            const message = this.querySelector('textarea').value;
-            
-            // 簡單驗證
-            if (!name || !email || !message) {
-                alert('Please fill in all required fields');
-                return;
-            }
-            
-            // 模擬發送郵件
-            const submitButton = this.querySelector('button[type="submit"]');
-            const originalText = submitButton.textContent;
-            
-            submitButton.textContent = 'Sending...';
-            submitButton.disabled = true;
-            
-            setTimeout(() => {
-                alert('Message sent! I will get back to you soon.');
-                this.reset();
-                submitButton.textContent = originalText;
-                submitButton.disabled = false;
-            }, 2000);
-        });
-    }
+    // if (contactForm) {
+    //     contactForm.addEventListener('submit', function(e) {
+    //         e.preventDefault();
+    //         
+    //         // 獲取表單數據
+    //         const formData = new FormData(this);
+    //         const name = this.querySelector('input[type="text"]').value;
+    //         const email = this.querySelector('input[type="email"]').value;
+    //         const subject = this.querySelectorAll('input[type="text"]')[1].value;
+    //         const message = this.querySelector('textarea').value;
+    //         
+    //         // 簡單驗證
+    //         if (!name || !email || !message) {
+    //             alert('Please fill in all required fields');
+    //             return;
+    //         }
+    //         
+    //         // 模擬發送郵件
+    //         const submitButton = this.querySelector('button[type="submit"]');
+    //         const originalText = submitButton.textContent;
+    //         
+    //         submitButton.textContent = 'Sending...';
+    //         submitButton.disabled = true;
+    //         
+    //         setTimeout(() => {
+    //             alert('Message sent! I will get back to you soon.');
+    //             this.reset();
+    //             submitButton.textContent = originalText;
+    //             submitButton.disabled = false;
+    //         }, 2000);
+    //     });
+    // }
     
     // 專案項目點擊效果
     const portfolioLinks = document.querySelectorAll('.portfolio-link');
@@ -174,15 +174,15 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // 社交媒體連結
-    const socialLinks = document.querySelectorAll('.social-link');
+    // 社交媒體連結 - 移除 demo 攔截，讓連結正常工作
+    // const socialLinks = document.querySelectorAll('.social-link');
     
-    socialLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
-            e.preventDefault();
-            alert('This is a demo link. In a real website, this would navigate to your social media pages.');
-        });
-    });
+    // socialLinks.forEach(link => {
+    //     link.addEventListener('click', function(e) {
+    //         e.preventDefault();
+    //         alert('This is a demo link. In a real website, this would navigate to your social media pages.');
+    //     });
+    // });
     
     // 返回頂部按鈕
     const backToTopButton = document.createElement('button');

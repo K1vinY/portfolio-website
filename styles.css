@@ -1134,9 +1134,17 @@ body {
 }
 
 .contact-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-info {
+    text-align: center;
+    margin-bottom: 3rem;
 }
 
 .contact-info h3 {
@@ -1153,24 +1161,32 @@ body {
 
 .contact-details {
     margin-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
 }
 
 .contact-item {
     display: flex;
     align-items: center;
-    margin-bottom: 1rem;
+    justify-content: center;
+    gap: 0.5rem;
     color: var(--text-secondary);
+    white-space: nowrap;
 }
 
 .contact-item i {
     color: var(--mocha-mus);
-    margin-right: 1rem;
     width: 20px;
 }
 
 .social-links {
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
+    justify-content: center;
 }
 
 .social-link {
@@ -1396,6 +1412,11 @@ body {
     
     .contact-content {
         grid-template-columns: 1fr;
+    }
+    
+    .contact-details {
+        flex-direction: column;
+        gap: 1.5rem;
     }
     
     .hero-buttons {
