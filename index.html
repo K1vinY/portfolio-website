@@ -103,6 +103,7 @@
                         <h3>Key Skills</h3>
                         <ul>
                             <li>Programming: Python, SQL, R, MATLAB</li>
+                            <li>Semiconductor Manufacturing & Process Engineering</li>
                             <li>Machine Learning (Scikit-learn, XGBoost, SVM)</li>
                             <li>End-to-end Full Stack Development (React.js, FastAPI, PostgreSQL)</li>
                             <li>Clinical Trial Data Analytics & Business Intelligence (Tableau, Power BI)</li>
@@ -115,6 +116,7 @@
                         </div>
                         <h3>Research Projects</h3>
                         <ul>
+                            <li>EnKiteDDI: Literature-Enhanced Drug-Drug Interaction Event Prediction</li>
                             <li>AI-based LLM content safety and moderation systems</li>
                             <li>Predicting Coral Bleaching Using NCAA Database</li>
                             <li>Applied Statistical Testing on Socioeconomic Impact Using NHANES Data</li>
@@ -131,21 +133,22 @@
         <div class="container">
             <h2 class="section-title">About Me</h2>
             <div class="about-content">
+                <h3 class="about-subtitle">AI Engineer | Semiconductor & Healthcare Data Science</h3>
+                <div class="about-main">
                 <div class="about-text">
-                    <h3>Biological Data Science Graduate Student</h3>
-                    <p>I am a graduate student in Biological Data Science at ASU with a background in biomedical engineering and a strong focus on applying data-driven solutions to complex healthcare and research problems. My expertise includes machine learning, biosignal processing, clinical data analysis, and end-to-end system development.</p>
-                    <p>During my recent summer internship, I developed an end-to-end AI safety detection system to improve LLM moderation reliability, combining custom-trained models with full-stack deployment. Currently, my master’s thesis focuses on drug–drug interaction prediction using LLMs and graph generative networks (GGNs), aiming to enhance pharmaceutical safety through deep learning and biomedical knowledge graphs.</p>
-                    <p>My interdisciplinary background allows me to bridge the gap between biomedical challenges and AI-driven solutions. Whether through system development or clinical data analysis, I strive to deliver impactful, scalable technologies that improve real-world outcomes.</p>
+                    <p>AI Engineer & Data Scientist with a background in Biological Data Science and biomedical engineering, specializing in machine learning, full-stack AI systems, and data-driven solutions across healthcare and semiconductor industries.</p>
+                    <p>Recently, I gained semiconductor industry experience at Lam Research, working in a fast-paced engineering environment focused on advanced manufacturing technologies, engineering operations, and data-driven problem solving. Previously, during my AI engineering internship, I developed an end-to-end AI safety detection platform to improve LLM moderation reliability through custom model development and scalable full-stack deployment. My research focuses on machine learning applications in biomedical informatics and pharmaceutical safety. I recently developed EnKiteDDI, a drug–drug interaction (DDI) prediction model designed to improve medication safety and support biomedical decision-making through advanced predictive modeling techniques.</p>
+                    <p>With interdisciplinary experience spanning AI, software engineering, healthcare analytics, and semiconductor technologies, I aim to build scalable intelligent systems that bridge cutting-edge research with real-world industrial impact.</p>
                 </div>
                 <div class="about-image">
                     <!-- 選項1：圓形照片（會裁切但保持圓形） -->
                     <!-- <img src="images/kevin-about.jpg" alt="Kevin Yu" class="about-photo"> -->
                     
                     <!-- 選項2：長方形照片（完整顯示不裁切） -->
-                    <!-- <img src="images/kevin-about.jpg" alt="Kevin Yu" class="about-photo-rectangle"> -->
+                    <img src="images/grad.png" alt="Kevin Yu" class="about-photo-rectangle">
                     
                     <!-- 選項3：不規則有機形狀（自然感） -->
-                    <img src="images/graph.png" alt="Kevin Yu" class="about-photo-organic">
+                    <!--<img src="images/graph.png" alt="Kevin Yu" class="about-photo-organic">-->
                     
                     <!-- 標籤區域 -->
                     <div class="about-tags">
@@ -159,6 +162,7 @@
                         <i class="fas fa-user-circle"></i>
                     </div>
                 </div>
+                </div>
             </div>
         </div>
     </section>
@@ -169,11 +173,39 @@
             <h2 class="section-title">Research Projects</h2>
             <div class="portfolio-filter">
                 <button class="filter-btn active" data-filter="all">ALL</button>
-                <button class="filter-btn" data-filter="data">Data</button>
                 <button class="filter-btn" data-filter="ai">AI Systems</button>
+                <button class="filter-btn" data-filter="data">Data</button>
                 <button class="filter-btn" data-filter="biomedical">Biomedical</button>
             </div>
             <div class="portfolio-grid">
+                <!-- AI Systems 類別專案 -->
+                <div class="portfolio-item" data-category="ai">
+                    <div class="portfolio-image">
+                        <img src="images/project-ddi-prediction.jpg" alt="EnKiteDDI" class="project-image">
+                        <div class="image-placeholder" style="display: none;">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>EnKiteDDI: Literature-Enhanced Drug-Drug Interaction Event Prediction</h3>
+                            <p>Machine learning framework for predicting drug–drug interaction events using biomedical literature-informed feature engineering and predictive analytics</p>
+                            <a href="enkiteddi.html" class="portfolio-link">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="ai">
+                    <div class="portfolio-image">
+                        <img src="images/project-llm-safety.jpg" alt="LLM Safety System" class="project-image">
+                        <div class="image-placeholder" style="display: none;">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>AI-based LLM Content Safety and Moderation Systems</h3>
+                            <p>End-to-end AI safety detection system for large language model content moderation</p>
+                            <a href="llm-safety.html" class="portfolio-link">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- Data 類別專案 -->
                 <div class="portfolio-item" data-category="data">
                     <div class="portfolio-image">
@@ -198,34 +230,6 @@
                             <h3>Applied Statistical Testing on Socioeconomic Impact Using NHANES Data</h3>
                             <p>Statistical analysis of health and socioeconomic factors using national survey data</p>
                             <a href="nhanes.html" class="portfolio-link">View Details</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- AI Systems 類別專案 -->
-                <div class="portfolio-item" data-category="ai">
-                    <div class="portfolio-image">
-                        <img src="images/project-ddi-prediction.jpg" alt="DDI Prediction System" class="project-image">
-                        <div class="image-placeholder" style="display: none;">
-                            <i class="fas fa-brain"></i>
-                        </div>
-                        <div class="portfolio-overlay">
-                            <h3>Unveiling DDI Mechanisms: A Hybrid LLM-GNN Approach for Prediction and Interpretation</h3>
-                            <p>Advanced AI system combining Large Language Models and Graph Neural Networks for drug interaction prediction</p>
-                            <a href="ddi-llm-gnn.html" class="portfolio-link">View Details</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item" data-category="ai">
-                    <div class="portfolio-image">
-                        <img src="images/project-llm-safety.jpg" alt="LLM Safety System" class="project-image">
-                        <div class="image-placeholder" style="display: none;">
-                            <i class="fas fa-shield-alt"></i>
-                        </div>
-                        <div class="portfolio-overlay">
-                            <h3>AI-based LLM Content Safety and Moderation Systems</h3>
-                            <p>End-to-end AI safety detection system for large language model content moderation</p>
-                            <a href="llm-safety.html" class="portfolio-link">View Details</a>
                         </div>
                     </div>
                 </div>

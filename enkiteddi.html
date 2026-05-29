@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unveiling DDI Mechanisms: A Hybrid LLM-GNN Approach for Prediction and Interpretation</title>
+    <title>EnKiteDDI: Literature-Enhanced Drug-Drug Interaction Event Prediction</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -38,7 +38,7 @@
             </div>
 
             <div class="project-header">
-                <h1 class="project-title">Unveiling DDI Mechanisms: A Hybrid LLM-GNN Approach for Prediction and Interpretation</h1>
+                <h1 class="project-title">EnKiteDDI: Literature-Enhanced Drug-Drug Interaction Event Prediction</h1>
                 <div class="project-meta">
                     <div class="meta-item"><i class="fas fa-calendar-alt"></i><span>Jul 2025 - May 2026</span></div>
                     <div class="meta-item"><i class="fas fa-map-marker-alt"></i><span>Arizona State University</span></div>
@@ -48,21 +48,21 @@
 
             <div class="project-summary">
                 <h2>Abstract</h2>
-                <p>Polypharmacy increases the risk of harmful drug–drug interactions (DDIs), yet current detection methods are limited by scale and cost. This project proposes a novel framework combining Large Language Models (LLMs) and Graph Neural Networks (GNNs) to extract biomedical knowledge from unstructured text and predict DDIs through biological network reasoning. The goal is to enhance DDI discovery with interpretable, mechanism-level insights, contributing to safer and more informed clinical decision-making.</p>
+                <p>Drug-drug interactions (DDI) can cause serious adverse events, and modern event-based DDI prediction models still struggle to exploit literature evidence at the pair level and to generalize under severe class imbalance. We propose EnKiteDDI, a literature-enhanced extension of KiteDDI that keeps the original SMILES encoder and DRKG-based knowledge graph (KG) branch unchanged, and augments them with a compact SemMedDB-derived feature vector for each drug pair. Our final configuration, EnKiteDDI (+PMID, 9-dim), augments KiteDDI with an interpretable SemMedDB-derived pairwise feature vector encoding relation presence, predicate types, co-occurrence frequency, and the number of supporting PubMed articles (PMIDs), enabling improved prediction and traceability to the literature. We compare the proposed method with representative baselines on two DrugBank-derived benchmarks, db1-65 and db2-100, under validation, unseen-pair (U1), and unseen-drug (U2) splits. Together with an ablation study, experimental results demonstrate that low-dimensional, literature-derived pairwise signals offer an effective and practical way to enhance KG-integrated DDI models.</p>
             </div>
 
             <div class="project-content">
                 <div class="content-section">
                     <h2>The What</h2>
                     <div class="content-text">
-                        <p><em>Project in progress - content coming soon</em></p>
+                        <p>Developed EnKiteDDI, a novel extension of the KiteDDI architecture for event-based DDI prediction. The project enhances traditional knowledge graph-based DDI models by incorporating literature-derived evidence from SemMedDB to improve prediction accuracy, interpretability, and robustness under highly imbalanced biomedical datasets</p>
                     </div>
                 </div>
 
                 <div class="content-section">
                     <h2>The How</h2>
                     <div class="content-text">
-                        <p><em>Project in progress - content coming soon</em></p>
+                        <p>Built a literature-enhanced deep learning framework that combines Transformer-based SMILES molecular encoding, DRKG biomedical knowledge graph embeddings, and SemMedDB-derived pairwise literature features to improve event-based drug–drug interaction prediction. The model integrates compact PMID-supported biomedical relation features into the original KiteDDI architecture through an additional MLP fusion module and was evaluated under unseen-pair and unseen-drug inductive settings on DrugBank-derived benchmarks.</p>
                     </div>
                 </div>
 
@@ -70,7 +70,11 @@
                     <h2>Results & Impact</h2>
                     <div class="results-content">
                         <div class="results-text">
-                            <p><em>Project in progress - results coming soon</em></p>
+                            <p>EnKiteDDI consistently matched or outperformed multiple state-of-the-art DDI prediction baselines across the db1-65 and db2-100 benchmarks, particularly improving AUPR and AUC under severe class imbalance and unseen-drug evaluation settings. The proposed PMID-enhanced feature design improved both predictive performance and model interpretability by linking interaction predictions to supporting biomedical literature evidence. Experimental results demonstrated that compact literature-derived signals can effectively enhance knowledge graph-integrated DDI models while maintaining scalability and low feature complexity.</p>
+                        </div>
+                        <div class="results-images results-images-stack">
+                            <img src="images/enkiteddi-table.png" alt="EnKiteDDI Benchmark Results Table">
+                            <img src="images/enkiteddi-aupr.png" alt="EnKiteDDI AUPR Performance">
                         </div>
                     </div>
                 </div>
@@ -79,16 +83,18 @@
             <div class="project-technologies">
                 <h3>Technologies Used</h3>
                 <div class="tech-tags">
+                    <span class="tech-tag">ML/Deep Learning</span>
                     <span class="tech-tag">Python</span>
-                    <span class="tech-tag">GNN</span>
-                    <span class="tech-tag">LLM</span>
+                    <span class="tech-tag">Biomedical Data</span>
+                    <span class="tech-tag">NLP / Literature Mining</span>
+                    <span class="tech-tag">Data Sources</span>
                 </div>
             </div>
 
             <div class="project-links">
                 <h3>Related Links</h3>
                 <div class="link-buttons">
-                    <a class="link-button" href="#" target="_blank" rel="noopener noreferrer">View Code</a>
+                    <a class="link-button" href="https://github.com/K1vinY/EnKiteDDI" target="_blank" rel="noopener noreferrer">View Code</a>
                 </div>
             </div>
         </div>
@@ -104,5 +110,3 @@
     
 </body>
 </html>
-
-

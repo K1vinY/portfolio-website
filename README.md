@@ -14,7 +14,7 @@ This portfolio features:
 
 - **Predicting Coral Bleaching Using NCAA Database** - Machine learning analysis using NOAA database
 - **Applied Statistical Testing on Socioeconomic Impact Using NHANES Data** - Statistical testing on socioeconomic health impacts
-- **Unveiling DDI Mechanisms: A Hybrid LLM-GNN Approach for Prediction and Interpretation** - Hybrid LLM-GNN approach for drug interaction prediction
+- **EnKiteDDI: Literature-Enhanced Drug-Drug Interaction Event Prediction** - Literature-enhanced DDI event prediction framework
 - **AI-based LLM Content Safety and Moderation Systems** - Content moderation and safety frameworks
 - **Development of Assistive Listening Device and Clinical Trials** - Assistive listening technology with clinical trials
 - **Combination of Ear-EEG and Masking in Earphone for Tinnitus Improvements** - Ear-EEG and masking technology research
