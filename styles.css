@@ -1017,6 +1017,109 @@ body {
     font-style: italic;
 }
 
+/* 榮譽獎項區域 */
+.honors {
+    padding: 100px 0;
+    background: var(--white);
+}
+
+.honors-intro {
+    text-align: center;
+    max-width: 640px;
+    margin: -1rem auto 3rem;
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+
+.honors-groups {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.honor-category {
+    background: var(--light-gray);
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.honor-category:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.honor-category-full {
+    grid-column: 1 / -1;
+}
+
+.honors-list-columns {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 2rem;
+}
+
+.honors-list-columns .honor-item:nth-last-child(-n+2) {
+    border-bottom: none;
+}
+
+.honors-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.honor-item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding: 1.1rem 0;
+    border-bottom: 1px solid rgba(184, 149, 107, 0.2);
+}
+
+.honor-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.honor-item:first-child {
+    padding-top: 0;
+}
+
+.honor-item-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.honor-item-title {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    line-height: 1.4;
+    margin: 0 0 0.25rem;
+}
+
+.honor-item-org {
+    font-size: 0.95rem;
+    color: var(--mocha-mus);
+    line-height: 1.5;
+    margin: 0;
+}
+
+.honor-item-date {
+    flex-shrink: 0;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    white-space: nowrap;
+    padding-top: 0.15rem;
+}
+
 .publications-list {
     max-width: 800px;
     margin: 0 auto;
@@ -1412,6 +1515,36 @@ body {
     .publications-grid {
         grid-template-columns: 1fr;
         gap: 2rem;
+    }
+
+    .honors-groups {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .honor-category {
+        padding: 1.5rem;
+    }
+
+    .honor-item {
+        flex-direction: column;
+        gap: 0.35rem;
+    }
+
+    .honor-item-date {
+        padding-top: 0;
+    }
+
+    .honors-list-columns {
+        grid-template-columns: 1fr;
+    }
+
+    .honors-list-columns .honor-item:nth-last-child(-n+2) {
+        border-bottom: 1px solid rgba(184, 149, 107, 0.2);
+    }
+
+    .honors-list-columns .honor-item:last-child {
+        border-bottom: none;
     }
     
     .publication-icon {

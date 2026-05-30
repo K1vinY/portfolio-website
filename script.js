@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     // 滾動動畫效果
-    const fadeElements = document.querySelectorAll('.about, .portfolio, .experience, .publications, .resume, .contact');
+    const fadeElements = document.querySelectorAll('.about, .portfolio, .experience, .honors, .publications, .resume, .contact');
     
     const fadeObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
